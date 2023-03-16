@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001577545102"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "music")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "5197215524").split())
+    map(int, getenv("OWNER_ID", "").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -59,7 +59,7 @@ UPSTREAM_REPO = getenv(
     "https://github.com/aabb124/absmoon",
 )
 BOT_USERNAME = getenv(
-    "BOT_USERNAME", "T4I4Bot"
+    "BOT_USERNAME", ""
 )  # معرف بوتك بدون @
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -68,22 +68,22 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 CHANNEL_SUDO = getenv(
-    "CHANNEL_SUDO", "WIF_l"
+    "CHANNEL_SUDO", ""
 )  # معرف قناتك بدون @
 SUDO_USER = getenv(
-    "SUDO_USER", "https://t.me/DZzD5"
+    "SUDO_USER", ""
 )  # رابط حسابك
 YAFA_NAME = getenv(
-    "YAFA_NAME", "• 𝖡𝗈𝖬𝖻 •"
+    "YAFA_NAME", ""
 )  # اسم قناتك
 YAFA_CHANNEL = getenv(
-   " YAFA_CHANNEL", "https://t.me/WIF_l"
+   " YAFA_CHANNEL", ""
 )  # رابط قناتك
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/KTTCC"
+    "SUPPORT_CHANNEL", ""
 )  # رابط قناتك
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/tt77t7tt7"
+    "SUPPORT_GROUP", ""
 )  # رابط كروبك
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
@@ -115,7 +115,7 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/DZzD5")
+GITHUB_REPO = getenv("GITHUB_REPO",
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
@@ -150,7 +150,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "AgCpkoCevP3P8hSetdtUUdBdgRijuGP4Phw0hhQkkjt31fB949RN8qvlBSd7iG7cbST7egOQceaDJyYah4JrcN8f5eSj53N7PZeCU_746iKLdL236nRji155kHs-wypGJAm8jwW9OxpKkzrMN1IQXlIWnu_B9EkLfztyHRx03Khe9G9BDfNxqVxptrpjNWSCpQ5RSW31t5YQftaQYZkHkxQzmM0R753QJQbMR81q-TsMnchcSH_A5iZrzyn1haF0lKn9d6HJIZz2s1spL2G7i2VDPVPakzPSwJb9t8AjnoyJ0DjjSaGASv3wpVeBaAdOYyWTqg2pJk2QrWV77FPQtlILAAAAAUjjBCwA")
+STRING1 = getenv("STRING_SESSION", "")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
